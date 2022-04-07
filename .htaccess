@@ -6,5 +6,11 @@ RewriteEngine On
 # /clients
 RewriteRule ^clients$ /controllers/users-controller.php [L]
 
-# /clients
+# /spectacles
 RewriteRule ^spectacles$ /controllers/shows-controller.php [L]
+
+# /premiers-clients
+RewriteRule ^premiers-clients$ /controllers/firstUsers-controller.php [L]
+
+# /fidélité
+RewriteRule ^fidélité$ /controllers/loyalty-controller.php [L]

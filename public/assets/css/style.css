@@ -6,14 +6,21 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    color: #b97676;
+    color: #fac24a;
 }
 
 .link {
     color: #cacaca;
 }
 .nav-link:focus, .nav-link:hover {
-    color: #b97676;
+    color: #fac24a;
+}
+
+.card {
+    background-color: rgb(23 19 47);
+    border: 3px solid rgb(202 202 202);
+    color: #cacaca;
+    border-radius: 0.8rem;
 }
 
 .bg-main{
@@ -25,10 +32,20 @@ a:hover {
 }
 
 .bg-nav{
-    background-color: rgb(89 38 38);
+    background-color: rgb(23 19 47);
     color: #cacaca;
+    border-bottom: 1px solid #fac24a;
 }
 .bg-footer{
-    background-color: rgb(89 38 38);
+    background-color: rgb(23 19 47);
     color: #cacaca;
+    border-top: 1px solid #fac24a;
+}
+
+.bird{
+    height: 3em;
+}
+
+.mt-6 {
+    margin-top: 6rem;
 }

@@ -1,22 +1,26 @@
 <?php
-
+    require_once(dirname(__FILE__).'/../config/config.php');
+    $error = '';
+    
     // connect BDD
     try{
-        $bdd = new PDO('mysql:host=localhost;dbname=colyseum', 'root', '');
-        $bdd -> exec('SET NAMES utf8');
-    }
-    catch (PDOException $e){
-        echo 'Echec de la connexion : ' . $e->getMessage();
-    exit;
+        $sth = new PDO(DSN, ACCOUNT, PASSWORD, [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ]);
+        $sth -> exec('SET NAMES utf8');
+    } catch (PDOException $e){
+        $error .= $e->getMessage();
     }
 
-    // request
-    $request = 'SELECT * FROM `colyseum`.`clients`';
-    // prepare BDD
-    $sql = $bdd->prepare($request);
-    // execute BDD
-    $sql->execute();
-    $users = $sql->fetchAll();
+    try {
+        // request
+        $request = 'SELECT * FROM `colyseum`.`clients`';
+        // prepare BDD
+        $sth = $sth->prepare($request);
+        // execute BDD
+        $sth->execute();
+        $user = $sth->fetchAll();
+    } catch (PDOException $e){
+        $error .= $e->getMessage();
+    }
 
     // views
     include(dirname(__FILE__) .'/../views/templates/header.php');

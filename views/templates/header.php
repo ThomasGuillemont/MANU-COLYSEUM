@@ -17,21 +17,21 @@
 </head>
 
 <body class="bg-main">
-    <header class="p-1 bg-nav">
-        <div class="container-fluid d-flex justify-content-center">
+    <header class="p-1 bg-nav d-flex fixed-top">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <img class="bird me-3" src="/public/assets/img/bird.gif" alt="bird">
                     <h1 class="text-center fw-bold fs-2">Colyseum</h1>
+                    <img class="bird ms-3" src="/public/assets/img/bird.gif" alt="bird">
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-flex align-items-center justify-content-center">
                     <ul class="navbar-nav">
-                        <li class="nav-item fw-bold fs-6 d-flex">
+                        <li class="nav-item fw-bold fst-italic fs-6 d-flex">
                             <a class="nav-link link p-1" href="/clients">Clients</a>
                             <a class="nav-link link p-1" href="/spectacles">Spectacles</a>
+                            <a class="nav-link link p-1" href="/premiers-clients">Premiers clients</a>
+                            <a class="nav-link link p-1" href="/fidélité">Fidélité</a>
                         </li>
                     </ul>
                 </div>
