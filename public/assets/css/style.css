@@ -9,6 +9,10 @@ a:hover {
     color: #fac24a;
 }
 
+.h1, h1 {
+    color: #fac24a;
+}
+
 .link {
     color: #cacaca;
 }
@@ -18,9 +22,10 @@ a:hover {
 
 .card {
     background-color: rgb(23 19 47);
-    border: 3px solid rgb(202 202 202);
+    border: 1px solid rgb(250 194 74);
     color: #cacaca;
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.2em;
 }
 
 .bg-main{

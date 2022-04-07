@@ -4,7 +4,7 @@
             <?= $error ?? '' ?>
             <?php
                 // users
-                foreach ($loyalty as $key => $value) {
+                foreach ($name as $key => $value) {
                     ?>
                         <div class="col-12 text-center p-1 card" style="width: 15rem;">
                             <div class="card-body">

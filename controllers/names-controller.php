@@ -17,12 +17,12 @@
         $sth = $sth->prepare($request);
         // execute BDD
         $sth->execute();
-        $loyalty = $sth->fetchAll();
+        $name = $sth->fetchAll();
     } catch (PDOException $e){
         $error .= $e->getMessage();
     }
 
     // views
     include(dirname(__FILE__) .'/../views/templates/header.php');
-    include(dirname(__FILE__) .'/../views/loyalty.php');
+    include(dirname(__FILE__) .'/../views/names.php');
     include(dirname(__FILE__) .'/../views/templates/footer.php');

@@ -30,8 +30,9 @@
                         <li class="nav-item fw-bold fst-italic fs-6 d-flex">
                             <a class="nav-link link p-1" href="/clients">Clients</a>
                             <a class="nav-link link p-1" href="/spectacles">Spectacles</a>
-                            <a class="nav-link link p-1" href="/premiers-clients">Premiers clients</a>
-                            <a class="nav-link link p-1" href="/fidélité">Fidélité</a>
+                            <a class="nav-link link p-1" href="/premiers-clients">Premiers</a>
+                            <a class="nav-link link p-1" href="/fidélités">Fidélités</a>
+                            <a class="nav-link link p-1" href="/noms">Noms</a>
                         </li>
                     </ul>
                 </div>
