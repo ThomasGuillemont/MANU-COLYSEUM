@@ -1,0 +1,27 @@
+a {
+    color: #cacaca;
+    text-decoration: underline;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #b97676;
+}
+
+.bg-main{
+    background-color: #cacaca;
+}
+.main{
+    color: #1c1c1c;
+    font-size: 1.1em;
+}
+
+.bg-nav{
+    background-color: rgb(89 38 38);
+    color: #cacaca;
+}
+.bg-footer{
+    background-color: rgb(89 38 38);
+    color: #cacaca;
+}
