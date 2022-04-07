@@ -1,3 +1,3 @@
 <?php
-    header( 'location: /accueil');
+    header( 'location: /clients');
     die;

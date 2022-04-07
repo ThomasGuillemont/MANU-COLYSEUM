@@ -9,6 +9,13 @@ a:hover {
     color: #b97676;
 }
 
+.link {
+    color: #cacaca;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #b97676;
+}
+
 .bg-main{
     background-color: #cacaca;
 }

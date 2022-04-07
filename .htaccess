@@ -3,5 +3,8 @@ Options +FollowSymlinks
 # rewrite Apache activate
 RewriteEngine On
 
-# /home
-RewriteRule ^accueil$ /controllers/home-controller.php [L]
+# /clients
+RewriteRule ^clients$ /controllers/users-controller.php [L]
+
+# /clients
+RewriteRule ^spectacles$ /controllers/shows-controller.php [L]
