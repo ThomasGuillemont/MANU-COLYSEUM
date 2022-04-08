@@ -3,18 +3,19 @@
 
     try {
         // request
-        $request = 'SELECT `firstName`,`lastName`,`id`,`birthDate`
-        FROM `colyseum`.`clients`';
+        $request = 'SELECT *
+        FROM `colyseum`.`shows`
+        ORDER BY `title`;';
         // prepare BDD
         $sth = $sth->prepare($request);
         // execute BDD
         $sth->execute();
-        $user = $sth->fetchAll();
+        $showTitle = $sth->fetchAll();
     } catch (PDOException $e){
         $error .= $e->getMessage();
     }
 
     // views
     include(dirname(__FILE__) .'/../views/templates/header.php');
-    include(dirname(__FILE__) .'/../views/users.php');
+    include(dirname(__FILE__) .'/../views/showsTitles.php');
     include(dirname(__FILE__) .'/../views/templates/footer.php');

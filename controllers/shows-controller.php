@@ -1,23 +1,15 @@
 <?php
-    require_once(dirname(__FILE__).'/../config/config.php');
-    $error = '';
-
-    // connect BDD
-    try{
-        $sth = new PDO(DSN, ACCOUNT, PASSWORD, [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ]);
-        $sth -> exec('SET NAMES utf8');
-    } catch (PDOException $e){
-        $error .= $e->getMessage();
-    }
+    require_once(dirname(__FILE__).'/../config/pdo.php');
     
     try {
         // request
-        $request = 'SELECT * FROM `colyseum`.`showtypes`';
+        $request = 'SELECT *
+        FROM `colyseum`.`showtypes`';
         // prepare BDD
         $sth = $sth->prepare($request);
         // execute BDD
         $sth->execute();
-        $showsType = $sth->fetchAll(PDO::FETCH_OBJ);
+        $showsType = $sth->fetchAll();
     } catch (PDOException $e){
         $error .= $e->getMessage();
     }

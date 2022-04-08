@@ -17,3 +17,9 @@ RewriteRule ^fidélités$ /controllers/loyalty-controller.php [L]
 
 # /noms
 RewriteRule ^noms$ /controllers/names-controller.php [L]
+
+# /titres-spectacles
+RewriteRule ^titres-spectacles$ /controllers/showsTitles-controller.php [L]
+
+# /informations-clients
+RewriteRule ^informations-clients$ /controllers/usersInfo-controller.php [L]
