@@ -3,7 +3,7 @@
 
     try {
         // request
-        $request = 'SELECT `firstName`,`lastName`,`id`,`birthDate`,`cardNumber`,`card`
+    $request = 'SELECT `firstName`,`lastName`,`id`,DATE_FORMAT(`birthDate`, "%d-%m-%Y") AS birthDate,`cardNumber`,`card`
         -- IF(`cards`.cardTypeId = 1, "oui", "non") as fidelity,
         FROM `colyseum`.`clients`
         -- LEFT JOIN `colyseum`.`cards`
