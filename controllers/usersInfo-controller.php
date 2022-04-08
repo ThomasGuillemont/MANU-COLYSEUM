@@ -4,8 +4,11 @@
     try {
         // request
         $request = 'SELECT `firstName`,`lastName`,`id`,`birthDate`,`cardNumber`,`card`
+        -- IF(`cards`.cardTypeId = 1, "oui", "non") as fidelity,
         FROM `colyseum`.`clients`
-        ORDER BY `lastName` ASC;';
+        -- LEFT JOIN `colyseum`.`cards`
+        -- ON `clients`.`cardNumber` = ``cards`.`cardNumber`
+        ORDER BY `lastName`;';
         // prepare BDD
         $sth = $sth->prepare($request);
         // execute BDD
